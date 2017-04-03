@@ -1,0 +1,26 @@
+body {
+    color:dimgrey;
+
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    background-color: midnightblue;
+    padding:15px;
+
+}
+input {
+    border-style: dotted;
+    border-width:thin;
+}
+.btn {
+    background-color:midnightblue;
+    color:white;
+}
+.row{
+    padding:10px;
+}
+img {
+    padding:20px;
+}

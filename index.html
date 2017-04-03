@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <title>The AJAXson 5</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row">
     <h1>The AJAXson 5</h1>
-
+</div>
+<div class="row">
     <form id="form-gif-request" />
+    <div class="col-xs-12 col-md-4">
         <label>What kind of Jackson 5 related gif do you want?</label>
-        <input id="tag" type="text"/><br>
+    </div>
+    <div class="col-xs-10 col-md-2">
+        <div class="form-group">
+<label class="sr-only" for="exampleInputAmount">Jacksons are better than 1.</label>
+<div class="input-group">
+<input type="text" class="form-control" id="tag" placeholder="..."><br>
+    </div>
+</div></div></div>
+<div class="row">
+<div class="col-xs-10 col-md-2">
+        <label>Prove you are not a robot by answering this riddle:</label><br>
+    </div>
 
-        <label>Prove you are not a robot by answering this riddle:</lable><br>
-            <input id="riddle" type="text"/>Jacksons are better than 1.
-<br>
-                    <input type="submit" value="Get my Gif!" /><br>
+        <div class="col-xs-6 col-md-4">
+            <div class="form-group">
+  <label class="sr-only" for="exampleInputAmount">Jacksons are better than 1.</label>
+  <div class="input-group">
+    <input type="text" class="form-control" id="riddle" placeholder="How many">
+    <div class="input-group-addon">Jacksons are better than 1.</div>
+  </div>
+</div>
+</div>
+</div>
+<div class="row">
+            <div class="col-xs-8 col-md-4">
+    <input type="submit" value="Get my Gif!" class="btn btn-default"/>
+</div>
+</div>
     </form>
 
-    <img id="gif" src="" hidden="true"/>
+    <img id="gif" class="img-responsive" src="" hidden="true"/>
     <p id="feedback" hidden="true"></p>
+</div>
 
 </body>
 </html>
